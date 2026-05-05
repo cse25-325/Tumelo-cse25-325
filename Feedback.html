@@ -1,75 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FIFA Fan Hub - Feedback</title>
 </head>
-<body>
-    <header>
-    
 
-  </header>
+<body class="bg-dark text-light">
 
-  
-  <nav>
-    
-            <a href="index.html">Home</a>
-            <a href="About.html">About</a>
-            <a href="Teams.html">Teams</a>
-            <a href="Players.html">Players</a>
-            <a href="Matches.html">Matches</a>
-            <a href="News.html">News</a>
-            <a href="Contact.html">Contact</a>
-            <a href="Feedback.html">Feedback</a>
-  </nav>
-  <main class="container mt-4">
+    <header class="container-fluid py-3">
+        <section class="row align-items-center">
 
-  <section class="text-center mb-4">
-    <h1>Feedback</h1>
-  </section>
+            <figure class="col-md-3 text-center">
+                <img src="logo.png" alt="FIFA Fan Hub Logo" class="img-fluid" width="120">
+                <figcaption class="fw-bold mt-2">FIFA FAN HUB</figcaption>
+            </figure>
+            <form class="col-md-6" role="search">
+                <label for="search" class="visually-hidden">Search</label>
+                <input id="search" type="search" class="form-control" placeholder="Search/Type">
+            </form>
+            <aside class="col-md-3 text-center fs-2">
+                ?
+            </aside>
+        </section>
 
-  <form id="feedbackForm">
+    </header>
 
-    <fieldset class="mb-3">
-      <label for="email" class="form-label">Form:</label>
-      <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
-    </fieldset>
+    <nav>
 
-    <fieldset class="mb-3">
-      <label for="name" class="form-label">Name:</label>
-      <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
-    </fieldset>
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Teams.html">Teams</a>
+        <a href="Players.html">Players</a>
+        <a href="Matches.html">Matches</a>
+        <a href="News.html">News</a>
+        <a href="Contact.html">Contact</a>
+        <a href="Feedback.html">Feedback</a>
+    </nav>
+    <main class="container mt-4">
 
-    <fieldset class="mb-3">
-      <legend class="form-label">Rating:</legend>
-      <input type="radio" name="rating" value="1"> 1
-      <input type="radio" name="rating" value="2"> 2
-      <input type="radio" name="rating" value="3"> 3
-      <input type="radio" name="rating" value="4"> 4
-      <input type="radio" name="rating" value="5"> 5
-    </fieldset>
+        <section class="text-center mb-4">
+            <h1>Feedback</h1>
+        </section>
 
-    <fieldset class="mb-3">
-      <label for="comments" class="form-label">Comments:</label>
-      <textarea id="comments" class="form-control" rows="5" placeholder="Write your comments here..." required></textarea>
-    </fieldset>
+        <form id="feedbackForm">
 
-    <button type="submit" class="btn btn-success">Submit</button>
+            <fieldset class="mb-3">
+                <label for="email" class="form-label">Form:</label>
+                <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+            </fieldset>
 
-  </form>
+            <fieldset class="mb-3">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+            </fieldset>
 
-</main>
+            <fieldset class="mb-3">
+                <legend class="form-label">Rating:</legend>
+                <input type="radio" name="rating" value="1"> 1
+                <input type="radio" name="rating" value="2"> 2
+                <input type="radio" name="rating" value="3"> 3
+                <input type="radio" name="rating" value="4"> 4
+                <input type="radio" name="rating" value="5"> 5
+            </fieldset>
+
+            <fieldset class="mb-3">
+                <label for="comments" class="form-label">Comments:</label>
+                <textarea id="comments" class="form-control" rows="5" placeholder="Write your comments here..."
+                    required></textarea>
+            </fieldset>
+
+            <button type="submit" class="btn btn-success">Submit</button>
+
+        </form>
+
+    </main>
 
 
-  <footer>
+    <footer>
         <p>&copy; 2026 FIFA Fan Hub. All rights reserved.</p>
-        <p>Follow us: 
-            <a href="https://facebook.com">Facebook</a> 
-            <a href="https://instagram.com">Instagram</a>  
+        <p>Follow us:
+            <a href="https://facebook.com">Facebook</a>
+            <a href="https://instagram.com">Instagram</a>
             <a href="https://twitter.com">Twitter</a>
         </p>
     </footer>
 
 </body>
+
 </html>
