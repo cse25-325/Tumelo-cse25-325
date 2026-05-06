@@ -11,20 +11,28 @@
 
 
   <header class="bg-black text-light py-2">
-    <section class="container">
-      <section class="row align-items-center g-2">
+  <section class="container">
+    <section class="row align-items-center g-2">
 
-        <figure class="col-12 col-md-3 m-0 text-center text-md-start">
-          <a href="index.html" class="text-decoration-none" aria-label="Go to home"FIFA Fan Hubtion class="col-12 col-md-6">
-          <form id="searchForm" class="d-flex" role="search" aria-label="Site search">
-            <label for="searchInput" class="visually-hidden">Search</label>
-            <input id="searchInput" class="form-control" type="search" placeholder="Type/search" aria-label="Search input">
-            <button class="btn btn-outline-success ms-2" type="submit" aria-label="Search button">
-              <span class="bi bi-search" aria-hidden="true"></span>
-            </button>
-          </form>
-          <output id="searchOutput" class="small text-secondary d-block mt-1" aria-live="polite"></output>
-        </section>
+      
+      <figure class="col-12 col-md-3 m-0 text-center text-md-start">
+        <a href="index.html" class="text-decoration-none" aria-label="Go to home">
+          <img src="fifa-logo.png" class="img-fluid" alt="FIFA Fan Hub logo">
+        </a>
+      </figure>
+
+      
+      <section class="col-12 col-md-6">
+        <form id="searchForm" class="d-flex" role="search" aria-label="Site search">
+          <label for="searchInput" class="visually-hidden">Search</label>
+          <input id="searchInput" class="form-control" type="search" placeholder="Type/search" aria-label="Search input">
+          <button class="btn btn-outline-success ms-2" type="submit" aria-label="Search button">
+            <span class="bi bi-search" aria-hidden="true"></span>
+          </button>
+        </form>
+        <output id="searchOutput" class="small text-secondary d-block mt-1" aria-live="polite"></output>
+      </section>
+
 
         <section class="col-12 col-md-3 text-center text-md-end">
           <button
@@ -42,6 +50,14 @@
             <option>Setswana</option>
             <option>French</option>
             <option>Spanish</option>
+            <option>German</option>
+            <option>Chinese</option>
+            <option>Arabic</option>
+            <option>Hindi</option>
+            <option>Portuguese</option>
+            <option>Russian</option>
+            <option>Japanese</option>
+            <option>Swahili</option>
           </select>
         </section>
 
@@ -49,7 +65,7 @@
     </section>
   </header>
 
-  <!-- NAV LINKS BAR -->
+  
   <nav class="bg-light border-bottom" aria-label="Primary navigation">
     <section class="container">
       <ul class="nav py-2 flex-wrap justify-content-center justify-content-md-start" id="primaryNav">
@@ -60,29 +76,33 @@
 
   <main class="py-3">
 
-    <!-- GREEN BANNER (Top icons + welcome + sponsors) -->
     <section class="container">
 
       <section class="bg-success text-dark p-3">
 
-        <!-- League Icons row (mockup shows small icons) -->
         <section class="row align-items-center g-2 mb-2 text-center text-md-start">
           <figure class="col-3 col-md-2 m-0">
-            <img src="assets/icon-bundesliga.png" class="img-fluid" alt="Bundesliga icon3 col-md-2 m-0">
-            <img src="assets/icon-epl.png" classre>
+            <img src="Bundesliga.png" class="img-fluid" alt="Bundesliga icon">
+          </figure>
           <figure class="col-3 col-md-2 m-0">
-            <img src="assets/icon-laliga.png" class="img-fluid" alt="LaLiga iconcol-3 col-md-2 m-0">
-            <img src="assets/icon-seriea.png" class="img-fluid" altection class="col-12 col-md-4 text-center text-md-end">
+            <img src="LaLiga.png" class="img-fluid" alt="LaLiga icon">
+          </figure>
+          <figure class="col-3 col-md-2 m-0">
+            <img src="Serie A.png" class="img-fluid" alt="Serie A icon">
+          </figure>
+          <section class="col-12 col-md-4 text-center text-md-end">
             <span id="languageBadge" class="badge text-bg-dark" aria-live="polite">English</span>
           </section>
         </section>
 
-        <!-- Sponsors + Title row -->
+        
         <section class="row align-items-center g-3 text-center">
 
+          
           <section class="col-12 col-md-4 text-md-start">
-            <h2 class="m-0 fw-bold display-6 text-white">betway</h2>
+            <img src ="betway.svg" class="img-fluid" alt="betway logo">
           </section>
+
 
           <section class="col-12 col-md-4">
             <h1 class="m-0 fw-bold h2">Welcome to FIFA Fan Hub</h1>
@@ -90,7 +110,7 @@
           </section>
 
           <section class="col-12 col-md-4 text-md-end">
-            <h2 class="m-0 fw-bold display-6 text-white">SportyBet</h2>
+            <img src="Sporty.png" class="img-fluid" alt="SportyBet logo">
           </section>
 
         </section>
