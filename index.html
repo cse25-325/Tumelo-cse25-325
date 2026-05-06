@@ -1,121 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="FIFA Fan Hub Home Page">
-  <title>FIFA Fan Hub - Home</title>
-</head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FIFA Fan Hub - Football on your tips">
+  <title>FIFA Fan Hub | Home</title>
 
-<body>
-  <header>
-    <h1>FIFA Fan Hub</h1>
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.cssk">
+
+
+  <header class="bg-black text-light py-2">
+    <section class="container">
+      <section class="row align-items-center g-2">
+
+        <figure class="col-12 col-md-3 m-0 text-center text-md-start">
+          <a href="index.html" class="text-decoration-none" aria-label="Go to home"FIFA Fan Hubtion class="col-12 col-md-6">
+          <form id="searchForm" class="d-flex" role="search" aria-label="Site search">
+            <label for="searchInput" class="visually-hidden">Search</label>
+            <input id="searchInput" class="form-control" type="search" placeholder="Type/search" aria-label="Search input">
+            <button class="btn btn-outline-success ms-2" type="submit" aria-label="Search button">
+              <span class="bi bi-search" aria-hidden="true"></span>
+            </button>
+          </form>
+          <output id="searchOutput" class="small text-secondary d-block mt-1" aria-live="polite"></output>
+        </section>
+
+        <section class="col-12 col-md-3 text-center text-md-end">
+          <button
+            type="button"
+            class="btn btn-outline-light me-2"
+            data-bs-toggle="modal"
+            data-bs-target="#helpModal"
+            aria-label="Help">
+            <span class="bi bi-question-circle" aria-hidden="true"></span>
+          </button>
+
+          <label for="languageSelect" class="visually-hidden">Language</label>
+          <select id="languageSelect" class="form-select d-inline-block w-auto" aria-label="Language selector">
+            <option selected>English</option>
+            <option>Setswana</option>
+            <option>French</option>
+            <option>Spanish</option>
+          </select>
+        </section>
+
+      </section>
+    </section>
   </header>
 
-
-  <nav>
-
-    <a href="index.html">Home</a>
-    <a href="About.html">About</a>
-    <a href="Teams.html">Teams</a>
-    <a href="Players.html">Players</a>
-    <a href="Matches.html">Matches</a>
-    <a href="News.html">News</a>
-    <a href="Contact.html">Contact</a>
-    <a href="Feedback.html">Feedback</a>
-
+  <!-- NAV LINKS BAR -->
+  <nav class="bg-light border-bottom" aria-label="Primary navigation">
+    <section class="container">
+      <ul class="nav py-2 flex-wrap justify-content-center justify-content-md-start" id="primaryNav">
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.htmlnav-link" href="about.html class="nav-item"><a class="nav-link" href="teams.html class="nav-item"><a class="nav-link"</a></li>
+        <li class="nav-item"><a class="nav-link" href="matches.htmlli class="nav-item"><a class="nav-link" href="news.htmlclass="nav-item"><a class="nav-link" href="contact.htmlli class="nav-item"><a class="nav-link" href="feedback.htmlul>
+    </section>
   </nav>
-  <hr>
-  <main>
-    <h2>Welcome to FIFA Fan Hub!</h2>
-    <p>Football on your fingertips.</p>
 
-    <section>
-      <h3>Latest News</h3>
-      <ul>
-        <li> id="news1">Barca Shocked</li>
-        <a href="News.html">Read More</a>
-        <li> id="news2">Cama to LFC??</li>
-        <a href="News.html">Read More</a>
-        
-      </ul>
+  <main class="py-3">
+
+    <!-- GREEN BANNER (Top icons + welcome + sponsors) -->
+    <section class="container">
+
+      <section class="bg-success text-dark p-3">
+
+        <!-- League Icons row (mockup shows small icons) -->
+        <section class="row align-items-center g-2 mb-2 text-center text-md-start">
+          <figure class="col-3 col-md-2 m-0">
+            <img src="assets/icon-bundesliga.png" class="img-fluid" alt="Bundesliga icon3 col-md-2 m-0">
+            <img src="assets/icon-epl.png" classre>
+          <figure class="col-3 col-md-2 m-0">
+            <img src="assets/icon-laliga.png" class="img-fluid" alt="LaLiga iconcol-3 col-md-2 m-0">
+            <img src="assets/icon-seriea.png" class="img-fluid" altection class="col-12 col-md-4 text-center text-md-end">
+            <span id="languageBadge" class="badge text-bg-dark" aria-live="polite">English</span>
+          </section>
+        </section>
+
+        <!-- Sponsors + Title row -->
+        <section class="row align-items-center g-3 text-center">
+
+          <section class="col-12 col-md-4 text-md-start">
+            <h2 class="m-0 fw-bold display-6 text-white">betway</h2>
+          </section>
+
+          <section class="col-12 col-md-4">
+            <h1 class="m-0 fw-bold h2">Welcome to FIFA Fan Hub</h1>
+            <p class="m-0 small fw-semibold">"FOOTBALL ON YOUR TIPS"</p>
+          </section>
+
+          <section class="col-12 col-md-4 text-md-end">
+            <h2 class="m-0 fw-bold display-6 text-white">SportyBet</h2>
+          </section>
+
+        </section>
+      </section>
 
     </section>
-    <section>
-      <h3>Upcoming Matches</h3>
 
-      <table border="1">
-        <tr>
-          <th>Match</th>
-          <th>Kick-off Time</th>
-        </tr>
-        <tr>
-          <td>Chelsea vs Manchester City</td>
-          <td>17:30</td>
-        </tr>
-        <tr>
-          <td>Bayern Munich vs Real Madrid</td>
-          <td>21:00</td>
-        </tr>
-        
-      </table>
-      <a href="Matches.html">View Full Schedule</a>
     
+    <section class="container mt-3">
+      <section class="row g-3">
+
+        <!-- LATEST NEWS -->
+        <section class="col-12 col-lg-4">
+          <section class="bg-light border">
+            <header class="bg-dark text-light px-3 py-2">
+              <h2 class="h6 m-0">LATEST NEWS</h2>
+            </header>
+
+            <section class="p-3">
+
+              <article class="card mb-3">
+                <section class="row g-0 align-items-center">
+                  <figure class="col-4 m-0">
+                    <img src="simeone-spot-1775684997-194237.png" class="img-fluid rounded-start" alt="Newson class="col-8">
+                  <section class="col-8">
+                    <section class="card-body">
+                      <h3 class="h6 card-title mb-1">Barca shocked!!</h3>
+                      <p class="card-text small mb-1">
+                        <strong>Diego Simeone</strong> ends Camp Nou hodooo streak with Atleti win.
+                      </p>
+                      <a class="btn btn-sm btn-success" href="News.html">Read more</a>
+                    </section>
+                  </section>
+                </section>
+              </article>
+
+              <article class="card">
+                <section class="row g-0 align-items-center">
+                  <figure class="col-4 m-0">
+                    <img src="TT-Eduardo-Camavinga-with-Liverpool-badge-1-1-2.jpg" class="img-fluid rounded-start" alt="News Image">
+                  </figure>
+                  <section class="col-8">
+                    <section class="card-body">
+                      <h3 class="h6 card-title mb-1">Came to LFC??</h3>
+                      <p class="card-text small mb-1">
+                        Liverpool aiming for a central midfielder in the next transfer window.
+                      </p>
+                      <a class="btn btn-sm btn-success" href="News.html">Read more</a>
+                    </section>
+                  </section>
+                </section>
+              </article>
+
+            </section>
+          </section>
+        </section>
+
+        <!-- MATCHES -->
+        <section class="col-12 col-lg-4">
+          <section class="bg-light border">
+            <header class="bg-dark text-light px-3 py-2">
+              <h2 class="h6 m-0">MATCHES</h2>
+            </header>
+
+            <section class="p-3">
+
+              <section class="border mb-3">
+                <header class="bg-success text-dark px-2 py-1">
+                  <h3 class="h6 m-0 fw-bold">FIXTURES (Upcoming Matches)</h3>
+                </header>
+
+                <table class="table table-sm table-bordered m-0">
+                  <thead class="table-secondary">
+                    <tr>
+                      <th scope="col">Date</th>
+                      <th scope="col">Team A vs Team B</th>
+                      <th scope="col">Time</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>2026-04-10</td>
+                      <td>West Ham vs Wolves</td>
+                      <td>21:00</td>
+                    </tr>
+                    <tr>
+                      <td>2026-04-11</td>
+                      <td>Real Madrid vs Girona</td>
+                      <td>21:00</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+
+              <section class="border">
+                <header class="bg-success text-dark px-2 py-1">
+                  <h3 class="h6 m-0 fw-bold">RESULTS (Played Matches)</h3>
+                </header>
+
+                <table class="table table-sm table-bordered m-0">
+                  <thead class="table-secondary">
+                    <tr>
+                      <th scope="col">Date</th>
+                      <th scope="col">Team A vs Team B</th>
+                      <th scope="col">Score</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>2026-04-01</td>
+                      <td>Germany vs Japan</td>
+                      <td>2 - 1</td>
+                    </tr>
+                    <tr>
+                      <td>2026-04-02</td>
+                      <td>Italy vs Sweden</td>
+                      <td>0 - 0</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+
+            </section>
+          </section>
+        </section>
+
+        <!-- ADS -->
+        <aside class="col-12 col-lg-4">
+          <section class="bg-light border">
+            <header class="bg-dark text-light px-3 py-2">
+              <h2 class="h6 m-0">Ads</h2>
+            </header>
+
+            <figure class="m-0 p-3 text-center">
+              <img src="hbg-title-fifa-world-cup-2026-the-official-guide-39.jpg" class="img-fluid" alt="Advertisement poster">Promotional advertisement.</figcaption>
+            </figure>
+          </section>
+        </aside>
+
+      </section>
     </section>
 
-    <hr>
+  
+    <section class="container mt-3">
+      <section class="bg-light border">
+        <header class="bg-dark text-light px-3 py-2 text-center">
+          <h2 class="h6 m-0">FEATURED PLAYERS</h2>
+        </header>
 
-    <aside>
-      <h3>Advertisement</h3>
-      <img src="images/worldcup.jpg" alt="World Cup Promotion" width="200">
-    </aside>
+        <section class="p-3">
+          <section class="row g-3">
 
-    <hr>
+            <article class="col-12 col-md-4">
+              <section class="card h-100">
+                <figure class="m-0">
+                  <img src="cristiano-ronaldo.jpg" class="card-img-top" alt="Featured player 1ss="card-body">
+                  <h3 class="h6 card-title">Player name: Cristiano Ronaldo</h3>
+                  <p class="small mb-2">Player stats: Goals 970 | Assists 261 | Nationality: Portuguese</p>
+                  <button type="button" class="btn btn-success w-100 view-profile" data-player="Cristiano Ronaldo">
+                    View Profile
+                  </button>
+                </section>
+              </section>
+            </article>
 
-    <section>
+            <article class="col-12 col-md-4">
+              <section class="card h-100">
+                <figure class="m-0">
+                  <img src="Erling Haaland.jpg" class="card-img-top" alt="Featured player 2ss="card-body">
+                  <h3 class="h6 card-title">Player name: Erling Haaland</h3>
+                  <p class="small mb-2">Player stats: Goals | Assists|Nationality Nowargian</p>
+                  <button type="button" class="btn btn-success w-100 view-profile" data-player="Erling Haaland">
+                    View Profile
+                  </button>
+                </section>
+              </section>
+            </article>
 
-      <h4>Featured Players</h4>
+            <article class="col-12 col-md-4">
+              <section class="card h-100">
+                <figure class="m-0">
+                  <img src="Leonel.jpg" class="card-img-top" alt="Featured player 2ss="card-body">
+                <section class="card-body">
+                  <h3 class="h6 card-title">Player name: Lionel Messi</h3>
+                  <p class="small mb-2">Player stats: Goals 906| Assists 408| Nationality: Argentine</p>
+                  <button type="button" class="btn btn-success w-100 view-profile" data-player="Lionel Messi">
+                    View Profile
+                  </button>
+                </section>
+              </section>
+            </article>
 
-    <article>
-        <h4>Cristiano Ronaldo</h4>
-        <p>Position: Forward</p>
-        <a href="Players.html">View Profile</a>
-    </article>
+          </section>
 
-    <article>
-        <h4>Erling Haaland</h4>
-        <p>Position: Striker</p>
-        <a href="Players.html">View Profile</a>
-    </article>
+          <section class="text-center mt-3">
+            <a class="btn btn-success me-2" href="contact.htmltn btn-success"</a>
+          </section>
 
-    <article>
-        <h4>Lionel Messi</h4>
-        <p>Position: Attacker</p>
-        <a href="Players.html">View Profile</a>
-    </article>
-
-  </section>
-
-<hr>
-
-  <section>
-       <a href="Contact.html">Contact Us</a> 
-    <a href="Feedback.html">Give Feedback</a>
+        </section>
+      </section>
     </section>
 
   </main>
-  <footer>
-    <p>&copy; 2026 FIFA Fan Hub. All rights reserved.</p>
-    <p>Follow us: 
-            <a href="https://facebook.com">Facebook</a> 
-            <a href="https://instagram.com">Instagram</a>  
-            <a href="https://twitter.com">Twitter</a>
-        </p>
+
+  <!-- FOOTER -->
+  <footer class="bg-light py-3 mt-3">
+    <section class="container">
+      <section class="row align-items-center g-2">
+
+        <section class="col-12 col-md-6 text-center text-md-start">
+          <p class="m-0">&copy; 2026 FIFA Fan Hub</p>
+        </section>
+
+        <nav class="col-12 col-md-6 text-center text-md-end" aria-label="Social media links">
+          <a class="btn btn-outline-dark btn-sm me-" aria-hidden="true"></span>
+          </a>
+          #
+            <span class="bi bi-instagram" aria-hidden="true"></span>
+          </a>
+          <a class="btn btn-outline-darkbi-twitter" aria-hidden="true"></span>
+          </a>
+        </nav>
+
+      </section>
+    </section>
   </footer>
 
+  <!-- HELP MODAL -->
+  <section class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="helpModalLabel" aria-hidden="true">
+    <section class="modal-dialog modal-dialog-centered">
+      <section class="modal-content">
+        <header class="modal-header">
+          <h2 class="modal-title h5" id="helpModalLabel">Help</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </header>
+        <section class="modal-body">
+          <p class="mb-2">Use the navigation menu to open sections like Teams, Players, Matches and News.</p>
+          <p class="mb-0">Use the search box to quickly find pages by typing keywords such as "matches" or "players".</p>
+        </section>
+        <footer class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </footer>
+      </section>
+    </section>
+  </section>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstraps/bootstrap.bundle.min.js</script>
+
+
+  <script>
+    "use strict";
+
+  
+    document.getElementById("searchForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+      const text = document.getElementById("searchInput").value.trim();
+      const out = document.getElementById("searchOutput");
+
+      if (text.length === 0) {
+        out.textContent = "Please type something to search.";
+        return;
+      }
+
+      const links = document.querySelectorAll("#primaryNav a.nav-link");
+      let matchFound = false;
+
+      links.forEach(function (link) {
+        const linkText = link.textContent.toLowerCase();
+        if (linkText.includes(text.toLowerCase())) {
+          matchFound = true;
+          link.focus();
+        }
+      });
+
+      out.textContent = matchFound ? ("Quick match found for: " + text) : ("No quick match found for: " + text);
+    });
+
+    // Update language badge when selecting a language
+    document.getElementById("languageSelect").addEventListener("change", function () {
+      document.getElementById("languageBadge").textContent = this.value;
+    });
+
+    // Featured player buttons
+    document.querySelectorAll(".view-profile").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        const player = btn.getAttribute("data-player");
+        alert("Opening profile for: " + player);
+      });
+    });
+  </script>
 
 </body>
-
 </html>
