@@ -1,87 +1,158 @@
-
+/* BODY */
 body {
-    background-color: #0b4f6c;
-    font-family: Verdana, sans-serif;
-    color: black;
+    background-color: #0b4f6c; /* dark blue */
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-
-.top-bar {
+/* HEADER */
+header {
     background-color: #111;
     color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.logo {
-    width: 80px;
-}
-
+/* SEARCH */
 #searchBox {
-    border: 2px solid lime;
+    width: 300px;
+    padding: 8px;
+    border: 2px solid limegreen;
+    border-radius: 10px;
     background: transparent;
     color: white;
-    padding: 8px;
-    border-radius: 10px;
 }
 
-#helpBtn {
-    border-radius: 50%;
+/* NAV BAR */
+nav {
+    background-color: #e6efdb;
     padding: 10px;
-    background: none;
-    color: white;
-    border: 2px solid white;
+    text-align: center;
 }
 
-
-.menu {
-    background-color: #dfe6d6;
-}
-
-.menu a {
+nav a {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    margin: 0 5px;
 }
 
-.menu a.active {
+nav a:hover {
+    color: green;
     text-decoration: underline;
 }
 
-
+/* GREEN BANNER */
 .banner {
     background-color: #44b943;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
     color: black;
-    padding: 20px;
     font-weight: bold;
 }
 
+.banner h1 {
+    margin: 0;
+}
 
+/* MAIN SECTION */
+main {
+    background-color: #cfe0c6;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #1e5b78;
+}
+
+/* CONTENT GRID */
+.content {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+/* BOXES */
 .box {
     background-color: #5a7f57;
     padding: 20px;
-    margin: 10px;
+    flex: 1;
 }
 
+/* IMAGE */
+aside img {
+    width: 100%;
+}
 
-.footer {
+/* ADDITIONAL SECTION */
+.extra {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* FOOTER */
+footer {
     background-color: #cfe0c6;
+    margin: 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-
-img {
-    max-width: 100%;
-}
-
-.menu a:hover {
-    color: green;
+/* BUTTONS */
+button {
+    background-color: #44b943;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
 button:hover {
-    background-color: limegreen;
+    background-color: green;
+    color: white;
+}
+
+/* MATCHES PAGE TABLE STYLE */
+table {
+    width: 100%;
+    background-color: #5a7f57;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid white;
+    padding: 8px;
+    color: black;
+}
+
+/* CARDS (Teams & Players) */
+.card-style {
+    background-color: #5a7f57;
+    padding: 15px;
+    text-align: center;
+    margin: 10px;
+}
+
+/* FLEX GRID FOR CARDS */
+.grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-    .banner h1 {
-        font-size: 20px;
+    .content,
+    .extra,
+    .grid {
+        flex-direction: column;
+    }
+
+    #searchBox {
+        width: 150px;
     }
 }
