@@ -6,7 +6,13 @@
     <title>FIFA Fan Hub - Contact</title>
 </head>
 <body>
-    <header>
+    <headerclass="bg-dark text-white">
+    <nav class="navbar navbar-expand-lg navbar-dark container">
+      <a class="navbar-brand" href="#">FIFA FAN HUB</a>
+      <form class="d-flex ms-auto" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search/Type" aria-label="Search">
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
 
     </header>
      
@@ -22,7 +28,48 @@
             <a href="Feedback.html">Feedback</a>
   </nav>
 
-  <footer>
+  <section class="bg-success text-center text-white py-3">
+    <span class="me-3">betway</span>
+    <strong>Contact Us</strong>
+    <span class="ms-3">SportyBet</span>
+  </section>
+
+  
+  <main class="container my-5">
+    <section class="row">
+      
+      <section class="col-md-6">
+        <form id="contactForm">
+          <fieldset class="mb-3">
+            <label for="name" class="form-label">Name:</label>
+            <input type="text" id="name" class="form-control" required>
+          </fieldset>
+          <fieldset class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" id="email" class="form-control" required>
+          </fieldset>
+          <fieldset class="mb-3">
+            <label for="subject" class="form-label">Subject:</label>
+            <input type="text" id="subject" class="form-control" required>
+          </fieldset>
+          <fieldset class="mb-3">
+            <label for="message" class="form-label">Message:</label>
+            <textarea id="message" class="form-control" rows="4" required></textarea>
+          </fieldset>
+          <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+        </section>
+
+        <aside class="col-md-6">
+        <h5>GABORONE</h5>
+        <p>PLOT 20325 HAILE SELASSIE ROAD<br>PRIVATE Bag 226</p>
+        <p><strong>TEL:</strong> (+267) 3966 829<br><strong>FAX:</strong> (+267) 3955 920</p>
+        <p><a href="#" class="btn btn-outline-success">Contact Us</a></p>
+      </aside>
+    </section>
+  </main>
+
+<footer>
         <p>&copy; 2026FIFA Fan Hub. All rights reserved.</p>
         <p>Follow us: 
             <a href="https://facebook.com">Facebook</a> 
