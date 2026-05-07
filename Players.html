@@ -15,26 +15,54 @@
 
 
 </head>
-<body>
-    <header>
+<body class="bg-dark">
+
+  <header class="bg-black text-light py-2">
+    <section class="container">
+      <section class="row align-items-center g-2">
+
+        
+        <figure class="col-12 col-md-3 m-0 text-center text-md-start">
+          <a href="index.html">
+            <img src="photos/logo.png" class="img-fluid" alt="FIFA Fan Hub logo">
+          </a>
+        </figure>
+
+      
+        <section class="col-12 col-md-7">
+          <form id="searchForm" class="d-flex" role="search" aria-label="Player search">
+            <label for="searchInput" class="visually-hidden">Search players</label>
+            <input id="searchInput" class="form-control" type="search" placeholder="Search/Type" aria-label="Search input">
+            <button class="btn btn-outline-success ms-2" type="submit" aria-label="Search button">
+              <span class="bi bi-search" aria-hidden="true"></span>
+            </button>
+          </form>
+          <output id="searchStatus" class="small text-secondary d-block mt-1" aria-live="polite"></output>
+        </section>
+
     
-            <img src="logo.png" alt="FIFA Fan Hub Official Logo" width="150" height="80">
-            <p><em>"Your Ultimate Destination for Football Stats"</em></p> </div>
+        <section class="col-12 col-md-2 text-center text-md-end">
+          <button type="button" class="btn btn-outline-light rounded-circle"
+                  data-bs-toggle="modal" data-bs-target="#helpModal" aria-label="Help">
+            <span class="bi bi-question-lg" aria-hidden="true"></span>
+          </button>
+        </section>
+
+      </section>
+       <nav class="mt-3">
+    <a href="index.html" class="text-light">Home</a> |
+    <a href="About.html" class="text-light">About</a> |
+    <a href="Teams.html" class="text-light">Teams</a> |
+    <a href="Players.html" class="text-light">Players</a> |
+    <a href="Matches.html" class="text-light">Matches</a> |
+    <a href="News.html" class="text-light">News</a> |
+    <a href="Contact.html" class="text-light">Contact</a> |
+    <a href="Feedback.html" class="text-light">Feedback</a>
+  </nav>
+    </section>
   </header>
 
   
-  <nav>
-    
-            <a href="index.html">Home</a>
-            <a href="About.html">About</a>
-            <a href="Teams.html">Teams</a>
-            <a href="Players.html">Players</a>
-            <a href="Matches.html">Matches</a>
-            <a href="News.html">News</a>
-            <a href="Contact.html">Contact</a>
-            <a href="Feedback.html">Feedback</a>
-  </nav>
-
   <main>
         <h1>Players</h1>
 
@@ -43,19 +71,19 @@
                 <h2>ALL-TIME TOP GOAL SCORERS</h2>
                 
                 <div class="player-card">
-                    <img src="ronaldo.jpg" alt="Portrait of Cristiano Ronaldo" width="100" height="120">
+                    <img src="photos/cristiano-ronaldo.jpg" alt="Portrait of Cristiano Ronaldo" width="100" height="120">
                     <h3>Cristiano Ronaldo</h3>
                     <p>Goals: 891</p>
                 </div>
 
                 <div class="player-card">
-                    <img src="messi.jpg" alt="Portrait of Lionel Messi" width="100" height="120">
+                    <img src="photos/Leonel.jpg" alt="Portrait of Lionel Messi" width="100" height="120">
                     <h3>Lionel Messi</h3>
                     <p>Goals: 819</p>
                 </div>
 
                 <div class="player-card">
-                    <img src="pele.jpg" alt="Portrait of Pelé" width="100" height="120">
+                    <img src="photos/Pele-Brazilian-soccer-player-athlete-circa-1970s.jpg" alt="Portrait of Pelé" width="100" height="120">
                     <h3>Pelé</h3>
                     <p>Goals: 767</p>
                 </div>
